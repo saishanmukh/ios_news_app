@@ -1,15 +1,18 @@
 //
-//  HeadlinesViewController.swift
+//  NewsDescriptionViewController.swift
 //  News_App_iOS
 //
-//  Created by student on 4/6/22.
+//  Created by Nagarushyanth Tummala on 4/7/22.
 //
 
 import UIKit
 
-class HeadlinesViewController: UIViewController {
+class NewsDescriptionViewController: UIViewController {
 
-    @IBOutlet weak var table: UITableView!
+    @IBOutlet weak var newsImage: UIImageView!
+    @IBOutlet weak var newsDescription: UITextView!
+    @IBAction func saveNewsButton(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
