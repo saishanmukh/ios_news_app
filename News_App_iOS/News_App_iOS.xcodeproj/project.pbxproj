@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F91C27027FD3DDB00F02D41 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91C26F27FD3DDB00F02D41 /* RegisterViewController.swift */; };
+		3F91C27227FD470900F02D41 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91C27127FD470900F02D41 /* TabBarViewController.swift */; };
+		3F91C27427FD5C5D00F02D41 /* HeadlinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91C27327FD5C5D00F02D41 /* HeadlinesViewController.swift */; };
+		3F91C27627FD5C7800F02D41 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91C27527FD5C7800F02D41 /* CategoriesViewController.swift */; };
+		3F91C27827FD5C8D00F02D41 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91C27727FD5C8D00F02D41 /* SavedViewController.swift */; };
+		3F91C27A27FD6AFD00F02D41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F91C27927FD6AFD00F02D41 /* Assets.xcassets */; };
 		45DC30D027FB703A00D5AE1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC30CF27FB703A00D5AE1F /* AppDelegate.swift */; };
 		45DC30D227FB703A00D5AE1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC30D127FB703A00D5AE1F /* SceneDelegate.swift */; };
 		45DC30D427FB703A00D5AE1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC30D327FB703A00D5AE1F /* ViewController.swift */; };
 		45DC30D727FB703A00D5AE1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DC30D527FB703A00D5AE1F /* Main.storyboard */; };
-		45DC30D927FB703A00D5AE1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45DC30D827FB703A00D5AE1F /* Assets.xcassets */; };
 		45DC30DC27FB703A00D5AE1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DC30DA27FB703A00D5AE1F /* LaunchScreen.storyboard */; };
 		45DC30E727FB703B00D5AE1F /* News_App_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC30E627FB703B00D5AE1F /* News_App_iOSTests.swift */; };
 		45DC30F127FB703B00D5AE1F /* News_App_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC30F027FB703B00D5AE1F /* News_App_iOSUITests.swift */; };
@@ -36,12 +41,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F91C26F27FD3DDB00F02D41 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3F91C27127FD470900F02D41 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		3F91C27327FD5C5D00F02D41 /* HeadlinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesViewController.swift; sourceTree = "<group>"; };
+		3F91C27527FD5C7800F02D41 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		3F91C27727FD5C8D00F02D41 /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
+		3F91C27927FD6AFD00F02D41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45DC30CC27FB703A00D5AE1F /* News_App_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News_App_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DC30CF27FB703A00D5AE1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45DC30D127FB703A00D5AE1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		45DC30D327FB703A00D5AE1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		45DC30D627FB703A00D5AE1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		45DC30D827FB703A00D5AE1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45DC30DB27FB703A00D5AE1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45DC30DD27FB703A00D5AE1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45DC30E227FB703B00D5AE1F /* News_App_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = News_App_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,9 +113,14 @@
 				45DC30D127FB703A00D5AE1F /* SceneDelegate.swift */,
 				45DC30D327FB703A00D5AE1F /* ViewController.swift */,
 				45DC30D527FB703A00D5AE1F /* Main.storyboard */,
-				45DC30D827FB703A00D5AE1F /* Assets.xcassets */,
 				45DC30DA27FB703A00D5AE1F /* LaunchScreen.storyboard */,
 				45DC30DD27FB703A00D5AE1F /* Info.plist */,
+				3F91C26F27FD3DDB00F02D41 /* RegisterViewController.swift */,
+				3F91C27127FD470900F02D41 /* TabBarViewController.swift */,
+				3F91C27327FD5C5D00F02D41 /* HeadlinesViewController.swift */,
+				3F91C27527FD5C7800F02D41 /* CategoriesViewController.swift */,
+				3F91C27727FD5C8D00F02D41 /* SavedViewController.swift */,
+				3F91C27927FD6AFD00F02D41 /* Assets.xcassets */,
 			);
 			path = News_App_iOS;
 			sourceTree = "<group>";
@@ -232,7 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45DC30DC27FB703A00D5AE1F /* LaunchScreen.storyboard in Resources */,
-				45DC30D927FB703A00D5AE1F /* Assets.xcassets in Resources */,
+				3F91C27A27FD6AFD00F02D41 /* Assets.xcassets in Resources */,
 				45DC30D727FB703A00D5AE1F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +275,12 @@
 			files = (
 				45DC30D427FB703A00D5AE1F /* ViewController.swift in Sources */,
 				45DC30D027FB703A00D5AE1F /* AppDelegate.swift in Sources */,
+				3F91C27427FD5C5D00F02D41 /* HeadlinesViewController.swift in Sources */,
 				45DC30D227FB703A00D5AE1F /* SceneDelegate.swift in Sources */,
+				3F91C27227FD470900F02D41 /* TabBarViewController.swift in Sources */,
+				3F91C27627FD5C7800F02D41 /* CategoriesViewController.swift in Sources */,
+				3F91C27827FD5C8D00F02D41 /* SavedViewController.swift in Sources */,
+				3F91C27027FD3DDB00F02D41 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
