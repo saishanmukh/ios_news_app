@@ -37,8 +37,9 @@
                                 <rect key="frame" x="167" y="442" width="80" height="31"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
                                 <connections>
+                                    <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3MX-Hd-X4o"/>
                                     <segue destination="vzZ-sI-tL3" kind="show" id="Zat-1g-Dpf"/>
                                 </connections>
                             </button>
@@ -52,8 +53,11 @@
                                 <rect key="frame" x="238" y="506" width="86" height="31"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Signup"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Signup">
+                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                </buttonConfiguration>
                                 <connections>
+                                    <action selector="signupButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ayV-mI-Xj1"/>
                                     <segue destination="za4-Nb-EFl" kind="showDetail" identifier="registerView" id="Iy6-Xx-shg"/>
                                 </connections>
                             </button>
@@ -81,6 +85,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cHB-Bu-yES"/>
+                    <connections>
+                        <outlet property="loginId" destination="ywy-R9-y4m" id="7Nr-1H-R5l"/>
+                        <outlet property="password" destination="f79-bu-vWM" id="bzb-Vo-jZE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -172,7 +180,7 @@
         <!--RegisterViewController-->
         <scene sceneID="WKc-LU-zwS">
             <objects>
-                <viewController id="za4-Nb-EFl" userLabel="RegisterViewController" sceneMemberID="viewController">
+                <viewController id="za4-Nb-EFl" userLabel="RegisterViewController" customClass="RegisterViewController" customModule="News_App_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cUh-WW-vzj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -208,14 +216,17 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23Y-F8-bRJ">
-                                <rect key="frame" x="158" y="466" width="96.5" height="38"/>
+                                <rect key="frame" x="158" y="466" width="97" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Register">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
-                                    <color key="baseBackgroundColor" red="0.69019609689999994" green="0.61176472900000001" blue="0.53725492949999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="registerButtonAction:" destination="za4-Nb-EFl" eventType="touchUpInside" id="Xvp-6y-Cfe"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="EbL-8V-TOi">
                                 <rect key="frame" x="138" y="99" width="139" height="96"/>
@@ -225,6 +236,13 @@
                         <viewLayoutGuide key="safeArea" id="A8s-uG-lGN"/>
                         <color key="backgroundColor" red="0.69019609689999994" green="0.61176472900000001" blue="0.53725492949999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <connections>
+                        <outlet property="confirmPassword" destination="Yjs-lW-Byj" id="0tt-KY-sNT"/>
+                        <outlet property="emailId" destination="LDc-Em-KED" id="pFz-HV-Tzy"/>
+                        <outlet property="firstName" destination="3Lp-WP-las" id="vMf-FB-xvk"/>
+                        <outlet property="lastName" destination="SCq-Ae-D2J" id="gdh-3S-lya"/>
+                        <outlet property="password" destination="noh-YL-Tbb" id="s4p-06-L0V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nV9-dU-gGL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -260,6 +278,9 @@
         </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
