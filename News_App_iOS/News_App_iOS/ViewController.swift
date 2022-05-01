@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var password: UITextField!
     
-    @IBOutlet weak var statusLabel: UILabel!
     var login = users
     
     @IBAction func loginButtonAction(_ sender: Any) {
@@ -23,8 +22,6 @@ class ViewController: UIViewController {
         {
             if (id == user.username && pass == user.password)
             {
-                statusLabel.text = "Success"
-                headlinesOutlet.isHidden = false
                 loginId.text = ""
                 password.text = ""
                 
@@ -44,9 +41,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        headlinesOutlet.isHidden = true
-        loginId.text = ""
-        password.text = ""
+        
     }
     
     
