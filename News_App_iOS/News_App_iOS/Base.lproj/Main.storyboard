@@ -265,23 +265,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eWy-5k-T1H">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eWy-5k-T1H">
                                 <rect key="frame" x="87" y="171" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKn-uw-J52">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKn-uw-J52">
                                 <rect key="frame" x="181" y="586" width="54" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="save"/>
                                 <connections>
                                     <action selector="saveNewsButton:" destination="XFZ-2T-cYf" eventType="touchUpInside" id="ZRw-az-FOq"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="k0H-N1-gON">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="k0H-N1-gON">
                                 <rect key="frame" x="88" y="357" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="VOa-z8-dYZ"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -290,6 +290,17 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qeo-yP-1WQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eWy-5k-T1H" firstAttribute="leading" secondItem="qeo-yP-1WQ" secondAttribute="leading" constant="87" id="9fb-Hv-rYo"/>
+                            <constraint firstItem="k0H-N1-gON" firstAttribute="leading" secondItem="qeo-yP-1WQ" secondAttribute="leading" constant="88" id="BJr-rN-ODT"/>
+                            <constraint firstItem="eWy-5k-T1H" firstAttribute="centerX" secondItem="Jgw-Bu-RPq" secondAttribute="centerX" id="ECg-Dd-Wc5"/>
+                            <constraint firstItem="sKn-uw-J52" firstAttribute="leading" secondItem="qeo-yP-1WQ" secondAttribute="leading" constant="181" id="Typ-Pq-3Dg"/>
+                            <constraint firstItem="sKn-uw-J52" firstAttribute="centerX" secondItem="k0H-N1-gON" secondAttribute="centerX" id="Uuo-7v-GAF"/>
+                            <constraint firstItem="k0H-N1-gON" firstAttribute="top" secondItem="Jgw-Bu-RPq" secondAttribute="top" constant="357" id="cdj-WC-xGZ"/>
+                            <constraint firstItem="qeo-yP-1WQ" firstAttribute="bottom" secondItem="sKn-uw-J52" secondAttribute="bottom" constant="147" id="dbW-iL-b7P"/>
+                            <constraint firstItem="eWy-5k-T1H" firstAttribute="top" secondItem="qeo-yP-1WQ" secondAttribute="top" constant="83" id="pDZ-2e-e8r"/>
+                            <constraint firstItem="k0H-N1-gON" firstAttribute="top" secondItem="eWy-5k-T1H" secondAttribute="bottom" constant="58" id="yGa-87-n9q"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -330,39 +341,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Firstname" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Lp-WP-las">
-                                <rect key="frame" x="126" y="240" width="162" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Lastname" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SCq-Ae-D2J">
-                                <rect key="frame" x="126" y="282" width="161.5" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="University Email ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LDc-Em-KED">
-                                <rect key="frame" x="126" y="324" width="162" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="noh-YL-Tbb">
-                                <rect key="frame" x="125" y="366" width="162" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yjs-lW-Byj">
-                                <rect key="frame" x="126" y="408" width="162" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23Y-F8-bRJ">
-                                <rect key="frame" x="158" y="466" width="97" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="h4Y-EX-NgR">
+                                <rect key="frame" x="126" y="240" width="162" height="202"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Firstname" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Lp-WP-las">
+                                        <rect key="frame" x="0.0" y="0.0" width="162" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Lastname" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SCq-Ae-D2J">
+                                        <rect key="frame" x="0.0" y="42" width="162" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="University Email ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LDc-Em-KED">
+                                        <rect key="frame" x="0.0" y="84" width="162" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="noh-YL-Tbb">
+                                        <rect key="frame" x="0.0" y="126" width="162" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yjs-lW-Byj">
+                                        <rect key="frame" x="0.0" y="168" width="162" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23Y-F8-bRJ">
+                                <rect key="frame" x="159" y="466" width="96.5" height="38"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Register">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
@@ -373,13 +383,24 @@
                                     <action selector="registerButtonAction:" destination="za4-Nb-EFl" eventType="touchUpInside" id="Xvp-6y-Cfe"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="EbL-8V-TOi">
-                                <rect key="frame" x="138" y="99" width="139" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="EbL-8V-TOi">
+                                <rect key="frame" x="138" y="99" width="138" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="Tif-o4-wOp"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="A8s-uG-lGN"/>
                         <color key="backgroundColor" red="0.69019609689999994" green="0.61176472900000001" blue="0.53725492949999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="h4Y-EX-NgR" firstAttribute="top" secondItem="EbL-8V-TOi" secondAttribute="bottom" constant="45" id="9VB-zU-PtO"/>
+                            <constraint firstItem="EbL-8V-TOi" firstAttribute="centerX" secondItem="h4Y-EX-NgR" secondAttribute="centerX" id="JP5-zO-N77"/>
+                            <constraint firstItem="23Y-F8-bRJ" firstAttribute="top" secondItem="h4Y-EX-NgR" secondAttribute="bottom" constant="24" id="PuW-QM-Iik"/>
+                            <constraint firstItem="EbL-8V-TOi" firstAttribute="top" secondItem="A8s-uG-lGN" secondAttribute="top" constant="99" id="cdD-dX-hUf"/>
+                            <constraint firstItem="EbL-8V-TOi" firstAttribute="centerX" secondItem="cUh-WW-vzj" secondAttribute="centerX" id="tAB-sq-11A"/>
+                            <constraint firstItem="EbL-8V-TOi" firstAttribute="leading" secondItem="A8s-uG-lGN" secondAttribute="leading" constant="138" id="wbA-fb-vEk"/>
+                            <constraint firstItem="EbL-8V-TOi" firstAttribute="centerX" secondItem="23Y-F8-bRJ" secondAttribute="centerX" id="zfI-jh-DLf"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="confirmPassword" destination="Yjs-lW-Byj" id="0tt-KY-sNT"/>
