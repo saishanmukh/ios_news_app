@@ -19,6 +19,7 @@
 		3F91C27827FD5C8D00F02D41 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91C27727FD5C8D00F02D41 /* SavedViewController.swift */; };
 		3F91C27A27FD6AFD00F02D41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F91C27927FD6AFD00F02D41 /* Assets.xcassets */; };
 		457E675027FF8DF30004A47A /* NewsDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457E674F27FF8DF30004A47A /* NewsDescriptionViewController.swift */; };
+		45CBC97A281E28C60057F063 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CBC979281E28C60057F063 /* Users.swift */; };
 		45DC30D027FB703A00D5AE1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC30CF27FB703A00D5AE1F /* AppDelegate.swift */; };
 		45DC30D227FB703A00D5AE1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC30D127FB703A00D5AE1F /* SceneDelegate.swift */; };
 		45DC30D427FB703A00D5AE1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC30D327FB703A00D5AE1F /* ViewController.swift */; };
@@ -59,6 +60,7 @@
 		3F91C27727FD5C8D00F02D41 /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
 		3F91C27927FD6AFD00F02D41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		457E674F27FF8DF30004A47A /* NewsDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDescriptionViewController.swift; sourceTree = "<group>"; };
+		45CBC979281E28C60057F063 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		45DC30CC27FB703A00D5AE1F /* News_App_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News_App_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DC30CF27FB703A00D5AE1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45DC30D127FB703A00D5AE1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				3F91C27527FD5C7800F02D41 /* CategoriesViewController.swift */,
 				3F91C27727FD5C8D00F02D41 /* SavedViewController.swift */,
 				3F91C27927FD6AFD00F02D41 /* Assets.xcassets */,
+				45CBC979281E28C60057F063 /* Users.swift */,
 			);
 			path = News_App_iOS;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				45DC30D027FB703A00D5AE1F /* AppDelegate.swift in Sources */,
 				3F91C27427FD5C5D00F02D41 /* HeadlinesViewController.swift in Sources */,
 				45DC30D227FB703A00D5AE1F /* SceneDelegate.swift in Sources */,
+				45CBC97A281E28C60057F063 /* Users.swift in Sources */,
 				3F91C27227FD470900F02D41 /* TabBarViewController.swift in Sources */,
 				3F02F009281E1A2C005EBE91 /* WorkTableViewCell.swift in Sources */,
 				3F91C27627FD5C7800F02D41 /* CategoriesViewController.swift in Sources */,
