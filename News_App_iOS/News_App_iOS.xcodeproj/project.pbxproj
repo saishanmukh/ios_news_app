@@ -22,6 +22,7 @@
 		3F14701D281F8A53009DE665 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F14701C281F8A53009DE665 /* CategoryTableViewCell.swift */; };
 		3F2E448D281F9997008E64DE /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2E448C281F9997008E64DE /* NewPostViewController.swift */; };
 		3F2E448F281F9E6E008E64DE /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2E448E281F9E6E008E64DE /* News.swift */; };
+		3F2E449128202FE9008E64DE /* SavedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2E449028202FE9008E64DE /* SavedTableViewCell.swift */; };
 		3F91C27027FD3DDB00F02D41 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91C26F27FD3DDB00F02D41 /* RegisterViewController.swift */; };
 		3F91C27227FD470900F02D41 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91C27127FD470900F02D41 /* TabBarViewController.swift */; };
 		3F91C27427FD5C5D00F02D41 /* HeadlinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91C27327FD5C5D00F02D41 /* HeadlinesViewController.swift */; };
@@ -69,6 +70,7 @@
 		3F14701C281F8A53009DE665 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		3F2E448C281F9997008E64DE /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		3F2E448E281F9E6E008E64DE /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		3F2E449028202FE9008E64DE /* SavedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTableViewCell.swift; sourceTree = "<group>"; };
 		3F91C26F27FD3DDB00F02D41 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3F91C27127FD470900F02D41 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		3F91C27327FD5C5D00F02D41 /* HeadlinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				457E674F27FF8DF30004A47A /* NewsDescriptionViewController.swift */,
 				45DC30D327FB703A00D5AE1F /* ViewController.swift */,
 				45DC30D527FB703A00D5AE1F /* Main.storyboard */,
+				3F2E449028202FE9008E64DE /* SavedTableViewCell.swift */,
 				3F2E448C281F9997008E64DE /* NewPostViewController.swift */,
 				3F2E448E281F9E6E008E64DE /* News.swift */,
 				3F14701A281F3A6F009DE665 /* CategoryCollectionViewCell.swift */,
@@ -330,6 +333,7 @@
 				3F02F012281E5918005EBE91 /* Users.swift in Sources */,
 				3F02F009281E1A2C005EBE91 /* WorkTableViewCell.swift in Sources */,
 				3F91C27627FD5C7800F02D41 /* CategoriesViewController.swift in Sources */,
+				3F2E449128202FE9008E64DE /* SavedTableViewCell.swift in Sources */,
 				3F91C27827FD5C8D00F02D41 /* SavedViewController.swift in Sources */,
 				3F91C27027FD3DDB00F02D41 /* RegisterViewController.swift in Sources */,
 				3F02F003281E1632005EBE91 /* Artist.swift in Sources */,

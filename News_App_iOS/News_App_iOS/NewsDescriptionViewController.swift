@@ -11,12 +11,21 @@ class NewsDescriptionViewController: UIViewController {
 
     @IBOutlet weak var newsImage: UIImageView!
     @IBOutlet weak var newsDescription: UITextView!
+
+    @IBOutlet weak var newsHeadline: UILabel!
     @IBAction func saveNewsButton(_ sender: Any) {
+        
     }
+    
+    var newsItem : News?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        newsImage.image = newsItem?.image
+        newsDescription.text = newsItem?.Description
+        newsHeadline.text = newsItem?.Headline
+        
     }
     
 

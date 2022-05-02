@@ -7,24 +7,60 @@
 
 import UIKit
 
-class SavedViewController: UIViewController {
-
-    @IBOutlet weak var saved: UITableView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class SavedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var savedNews = [News]()
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        var count = 0
+        savedNews = [News]()
+        for newsItem in news {
+            if newsItem.isSaved ==  true{
+                count += 1
+                savedNews.append(newsItem)
+            }
+        }
+        return count
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = savedTableView.dequeueReusableCell(withIdentifier: "SavedCell", for: indexPath) as! SavedTableViewCell
+        
+        let _news = savedNews[indexPath.row]
+        
+        cell.savedImage.image = _news.image
+        
+        cell.selectionStyle = .none
+        
+        cell.savedHeadLine.text = _news.Headline
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        cell.savedHeadLine.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.footnote)
+        return cell
     }
-    */
+    @IBOutlet weak var savedTableView: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        savedTableView.delegate = self
+        savedTableView.dataSource = self
+        
+        savedTableView.rowHeight = UITableView.automaticDimension
+
+        savedTableView.estimatedRowHeight = 50
+        
+        NotificationCenter.default.addObserver(forName: UIContentSizeCategory.didChangeNotification, object: .none, queue: OperationQueue.main) { [weak self] _ in
+          self?.savedTableView.reloadData()
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let transition = segue.identifier
+        if transition == "DetailSegue"{
+            let destination = segue.destination as! NewsDescriptionViewController
+            
+            //Assigning product to the destination
+            destination.newsItem = savedNews[(savedTableView.indexPathForSelectedRow?.row)!]
+        }
+    }
 
 }

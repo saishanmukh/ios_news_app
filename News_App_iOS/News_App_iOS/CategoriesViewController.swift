@@ -8,26 +8,35 @@
 import UIKit
 
 class CategoriesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource {
-    
-    let artists = Artist.artistsFromBundle()
-    lazy var selectedArtist = artists[0]
+        
+    var categoryNews = [News]()
+    var categorySelected  = ""
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return selectedArtist.works.count
+        var count = 0
+        categoryNews = [News]()
+        for newsItem in news {
+            if newsItem.category ==  categorySelected{
+                count += 1
+                categoryNews.append(newsItem)
+            }
+        }
+        return count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = categoryTableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath) as! CategoryTableViewCell
         
-        let work = selectedArtist.works[indexPath.row]
+        let _news = categoryNews[indexPath.row]
         
-        cell.categoryImage.image = work.image
+        cell.categoryImage.image = _news.image
         
         cell.selectionStyle = .none
         
-        cell.categoryHeadline.text = work.info
+        cell.categoryHeadline.text = _news.Headline
 
         cell.categoryHeadline.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.footnote)
+        
         
         return cell
     }
@@ -41,17 +50,22 @@ class CategoriesViewController: UIViewController, UICollectionViewDelegate, UICo
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = categoryCollectionView.dequeueReusableCell(withReuseIdentifier: "category", for: indexPath) as! CategoryCollectionViewCell
         
-        cell.categoryName.text = categories[indexPath.row]
-
+        cell.categoryLabel.text = categories[indexPath.row]
+        cell.categoryLabel.sizeToFit()
+        
         return cell
         
-        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        categorySelected = categories[indexPath.row]
+//        print(categorySelected)
+        self.categoryTableView.reloadData()
     }
     
 
     @IBOutlet weak var categoryTableView: UITableView!
 
-//    categoryButton
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     
 
@@ -63,8 +77,17 @@ class CategoriesViewController: UIViewController, UICollectionViewDelegate, UICo
         categoryTableView.delegate = self
         categoryTableView.dataSource = self
         
-        
-        // Do any additional setup after loading the view.
+        categorySelected  = "Trending"
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let transition = segue.identifier
+        if transition == "DetailSegue"{
+            let destination = segue.destination as! NewsDescriptionViewController
+            
+            //Assigning product to the destination
+            destination.newsItem = categoryNews[(categoryTableView.indexPathForSelectedRow?.row)!]
+        }
     }
     
 
