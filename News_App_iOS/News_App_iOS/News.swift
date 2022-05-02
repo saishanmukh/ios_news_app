@@ -103,5 +103,4 @@ var news12 = News(Headline: "Northwest track changes schedule due to weather, co
                   isSaved: false,
                   category: "Sports")
 
-let news = [news1]
-//,news2,news3,news4,news5,news6,news7,news8,news9,news10,news11,news12]
+let news = [news1,news2,news3,news4,news5,news6,news7,news8,news9,news10,news11,news12]
