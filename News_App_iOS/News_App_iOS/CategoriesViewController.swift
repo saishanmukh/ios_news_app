@@ -32,7 +32,7 @@ class CategoriesViewController: UIViewController, UICollectionViewDelegate, UICo
         return cell
     }
     
-    let categories = ["headlines", "sports", "technology"]
+    let categories = ["Headlines", "Sports", "Technology", "Trending", "Wellness", "Dining", "Administration", "Editorial", "Events"]
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return categories.count

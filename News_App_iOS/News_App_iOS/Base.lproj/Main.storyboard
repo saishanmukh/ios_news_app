@@ -204,7 +204,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="zbg-YU-cKN"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jee-bt-gnT">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jee-bt-gnT">
                                     <size key="itemSize" width="127" height="52"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -212,7 +212,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="category" id="AJY-jX-6xG" customClass="CategoryCollectionViewCell" customModule="News_App_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="127" height="52"/>
+                                        <rect key="frame" x="0.0" y="2.5" width="127" height="52"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Fv1-1j-hNU">
                                             <rect key="frame" x="0.0" y="0.0" width="127" height="52"/>
