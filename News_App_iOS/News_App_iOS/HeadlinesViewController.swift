@@ -13,19 +13,31 @@ class HeadlinesViewController: UIViewController, UITableViewDelegate, UITableVie
     lazy var selectedArtist = artists[0]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return selectedArtist.works.count
+//        return selectedArtist.works.count
+        return news.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = headlinesTableView.dequeueReusableCell(withIdentifier: "HeadlinesCell", for: indexPath) as! HeadlinesTableViewCell
         
-        let work = selectedArtist.works[indexPath.row]
+//        let work = selectedArtist.works[indexPath.row]
+//
+//        cell.headlinesImage.image = work.image
+//
+//        cell.selectionStyle = .none
+//
+//        cell.headlineText.text = work.info
+//
+//        cell.headlineText.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.footnote)
+//
+//        return cell
+        let _news = news[indexPath.row]
         
-        cell.headlinesImage.image = work.image
+        cell.headlinesImage.image = _news.image
         
         cell.selectionStyle = .none
         
-        cell.headlineText.text = work.info
+        cell.headlineText.text = _news.Headline
 
         cell.headlineText.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.footnote)
         
@@ -53,10 +65,10 @@ class HeadlinesViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewDidLoad()
         headlinesTableView.delegate = self
         headlinesTableView.dataSource = self
-        
+//
         headlinesTableView.rowHeight = UITableView.automaticDimension
-        
-        headlinesTableView.estimatedRowHeight = 300
+//
+        headlinesTableView.estimatedRowHeight = 50
         
         NotificationCenter.default.addObserver(forName: UIContentSizeCategory.didChangeNotification, object: .none, queue: OperationQueue.main) { [weak self] _ in
           self?.headlinesTableView.reloadData()

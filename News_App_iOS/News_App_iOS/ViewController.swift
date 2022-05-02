@@ -17,6 +17,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var statusLabel: UILabel!
     
     @IBAction func loginButtonAction(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+
+        self.navigationController?.navigationBar.isHidden = true
+        let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "HomeTabBar") as! UITabBarController
+        self.navigationController?.pushViewController(objSomeViewController, animated: true)
 
         var ref: DatabaseReference!
         ref = Database.database().reference()
@@ -40,11 +45,11 @@ class ViewController: UIViewController {
                 self.loginId.text = ""
                 self.password.text = ""
                 self.loginId.becomeFirstResponder()
-                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-
-                self.navigationController?.navigationBar.isHidden = true
-                let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "HomeTabBar") as! UITabBarController
-                self.navigationController?.pushViewController(objSomeViewController, animated: true)
+//                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+//
+//                self.navigationController?.navigationBar.isHidden = true
+//                let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "HomeTabBar") as! UITabBarController
+//                self.navigationController?.pushViewController(objSomeViewController, animated: true)
                 
             }
             else

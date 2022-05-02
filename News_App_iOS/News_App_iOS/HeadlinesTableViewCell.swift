@@ -13,6 +13,7 @@ class HeadlinesTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
 
     @IBOutlet weak var headlineText: UITextView!
     @IBOutlet weak var headlinesImage: UIImageView!
@@ -22,5 +23,6 @@ class HeadlinesTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+
 
 }
