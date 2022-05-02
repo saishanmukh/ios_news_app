@@ -20,6 +20,8 @@
 		3F147019281F3083009DE665 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3F147018281F3083009DE665 /* FirebaseStorage */; };
 		3F14701B281F3A6F009DE665 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F14701A281F3A6F009DE665 /* CategoryCollectionViewCell.swift */; };
 		3F14701D281F8A53009DE665 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F14701C281F8A53009DE665 /* CategoryTableViewCell.swift */; };
+		3F2E448D281F9997008E64DE /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2E448C281F9997008E64DE /* NewPostViewController.swift */; };
+		3F2E448F281F9E6E008E64DE /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2E448E281F9E6E008E64DE /* News.swift */; };
 		3F91C27027FD3DDB00F02D41 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91C26F27FD3DDB00F02D41 /* RegisterViewController.swift */; };
 		3F91C27227FD470900F02D41 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91C27127FD470900F02D41 /* TabBarViewController.swift */; };
 		3F91C27427FD5C5D00F02D41 /* HeadlinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91C27327FD5C5D00F02D41 /* HeadlinesViewController.swift */; };
@@ -65,6 +67,8 @@
 		3F147015281F044D009DE665 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3F14701A281F3A6F009DE665 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		3F14701C281F8A53009DE665 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		3F2E448C281F9997008E64DE /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		3F2E448E281F9E6E008E64DE /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		3F91C26F27FD3DDB00F02D41 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3F91C27127FD470900F02D41 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		3F91C27327FD5C5D00F02D41 /* HeadlinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesViewController.swift; sourceTree = "<group>"; };
@@ -72,16 +76,16 @@
 		3F91C27727FD5C8D00F02D41 /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
 		3F91C27927FD6AFD00F02D41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		457E674F27FF8DF30004A47A /* NewsDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDescriptionViewController.swift; sourceTree = "<group>"; };
-		45DC30CC27FB703A00D5AE1F /* News_App_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News_App_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45DC30CC27FB703A00D5AE1F /* News_App_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = News_App_iOS.app; path = "/Users/student/Documents/project_news_app/ios_news_app/News_App_iOS/build/Debug-iphoneos/News_App_iOS.app"; sourceTree = "<absolute>"; };
 		45DC30CF27FB703A00D5AE1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45DC30D127FB703A00D5AE1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		45DC30D327FB703A00D5AE1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		45DC30D627FB703A00D5AE1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45DC30DB27FB703A00D5AE1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45DC30DD27FB703A00D5AE1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45DC30E227FB703B00D5AE1F /* News_App_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = News_App_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45DC30E227FB703B00D5AE1F /* News_App_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = News_App_iOSTests.xctest; path = "/Users/student/Documents/project_news_app/ios_news_app/News_App_iOS/build/Debug-iphoneos/News_App_iOSTests.xctest"; sourceTree = "<absolute>"; };
 		45DC30E627FB703B00D5AE1F /* News_App_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News_App_iOSTests.swift; sourceTree = "<group>"; };
-		45DC30EC27FB703B00D5AE1F /* News_App_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = News_App_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45DC30EC27FB703B00D5AE1F /* News_App_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = News_App_iOSUITests.xctest; path = "/Users/student/Documents/project_news_app/ios_news_app/News_App_iOS/build/Debug-iphoneos/News_App_iOSUITests.xctest"; sourceTree = "<absolute>"; };
 		45DC30F027FB703B00D5AE1F /* News_App_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News_App_iOSUITests.swift; sourceTree = "<group>"; };
 		45DC30F227FB703B00D5AE1F /* News_App_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News_App_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,32 +118,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3F147017281F3083009DE665 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		45DC30C327FB703A00D5AE1F = {
 			isa = PBXGroup;
 			children = (
 				45DC30CE27FB703A00D5AE1F /* News_App_iOS */,
 				45DC30E527FB703B00D5AE1F /* News_App_iOSTests */,
 				45DC30EF27FB703B00D5AE1F /* News_App_iOSUITests */,
-				45DC30CD27FB703A00D5AE1F /* Products */,
-				3F147017281F3083009DE665 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		45DC30CD27FB703A00D5AE1F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				45DC30CC27FB703A00D5AE1F /* News_App_iOS.app */,
-				45DC30E227FB703B00D5AE1F /* News_App_iOSTests.xctest */,
-				45DC30EC27FB703B00D5AE1F /* News_App_iOSUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		45DC30CE27FB703A00D5AE1F /* News_App_iOS */ = {
@@ -150,6 +135,8 @@
 				457E674F27FF8DF30004A47A /* NewsDescriptionViewController.swift */,
 				45DC30D327FB703A00D5AE1F /* ViewController.swift */,
 				45DC30D527FB703A00D5AE1F /* Main.storyboard */,
+				3F2E448C281F9997008E64DE /* NewPostViewController.swift */,
+				3F2E448E281F9E6E008E64DE /* News.swift */,
 				3F14701A281F3A6F009DE665 /* CategoryCollectionViewCell.swift */,
 				3F02F00C281E2875005EBE91 /* HeadlinesTableViewCell.swift */,
 				3F14701C281F8A53009DE665 /* CategoryTableViewCell.swift */,
@@ -285,7 +272,7 @@
 			packageReferences = (
 				3F14700E281F00BA009DE665 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
-			productRefGroup = 45DC30CD27FB703A00D5AE1F /* Products */;
+			productRefGroup = 45DC30C327FB703A00D5AE1F;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -335,6 +322,8 @@
 				45DC30D427FB703A00D5AE1F /* ViewController.swift in Sources */,
 				3F02F001281E1618005EBE91 /* Work.swift in Sources */,
 				45DC30D027FB703A00D5AE1F /* AppDelegate.swift in Sources */,
+				3F2E448D281F9997008E64DE /* NewPostViewController.swift in Sources */,
+				3F2E448F281F9E6E008E64DE /* News.swift in Sources */,
 				3F91C27427FD5C5D00F02D41 /* HeadlinesViewController.swift in Sources */,
 				45DC30D227FB703A00D5AE1F /* SceneDelegate.swift in Sources */,
 				3F91C27227FD470900F02D41 /* TabBarViewController.swift in Sources */,
