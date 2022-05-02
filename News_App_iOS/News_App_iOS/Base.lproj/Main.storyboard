@@ -41,6 +41,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Login"/>
                                 <connections>
                                     <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3MX-Hd-X4o"/>
+                                    <segue destination="vzZ-sI-tL3" kind="show" id="eXB-ae-gf8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not registered at?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLe-XD-W9J">
@@ -59,22 +60,6 @@
                                 <connections>
                                     <action selector="signupButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ayV-mI-Xj1"/>
                                     <segue destination="za4-Nb-EFl" kind="showDetail" identifier="registerView" id="Iy6-Xx-shg"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUR-oO-Qru">
-                                <rect key="frame" x="106" y="627" width="203" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVK-yt-GUR">
-                                <rect key="frame" x="123" y="726" width="186" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Go to headlines"/>
-                                <connections>
-                                    <segue destination="vzZ-sI-tL3" kind="show" identifier="" id="6Pt-aA-x2o"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -102,10 +87,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="cHB-Bu-yES"/>
                     <connections>
-                        <outlet property="headlinesOutlet" destination="GVK-yt-GUR" id="q8T-Bd-GLJ"/>
                         <outlet property="loginId" destination="ywy-R9-y4m" id="7Nr-1H-R5l"/>
                         <outlet property="password" destination="f79-bu-vWM" id="bzb-Vo-jZE"/>
-                        <outlet property="statusLabel" destination="gUR-oO-Qru" id="P66-a6-pok"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -388,12 +371,12 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="noh-YL-Tbb">
                                         <rect key="frame" x="0.0" y="126" width="162" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yjs-lW-Byj">
                                         <rect key="frame" x="0.0" y="168" width="162" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>

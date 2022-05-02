@@ -19,12 +19,21 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var confirmPassword: UITextField!
     
+    
     @IBAction func registerButtonAction(_ sender: Any) {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        var fname = firstName.text
+        var lname = lastName.text
+        var email = emailId.text
+        var pwd = password.text
+        var cfmpwd = confirmPassword.text
         // Do any additional setup after loading the view.
     }
-
+    
+    
+    
+    
+    
 }
