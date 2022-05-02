@@ -1,23 +1,23 @@
 //
-//  LoginStruct.swift
+//  Users.swift
 //  News_App_iOS
 //
-//  Created by Nagarushyanth Tummala on 4/30/22.
+//  Created by student on 5/1/22.
 //
 
-import Foundation
-
-struct Users
-{
-    let id:Int
-    let username:String
-    let password:String
+class Users{
+    
+    var uniqueId: String?
+    var firstName: String?
+    var lastName: String?
+    var universityEmailId: String?
+    var password: String?
+    
+    init(uniqueId: String?, firstName: String?, lastName: String?, universityEmailId: String?, password: String?){
+        self.uniqueId = uniqueId
+        self.firstName = firstName
+        self.lastName = lastName
+        self.universityEmailId = universityEmailId
+        self.password = password
+    }
 }
-
-
-
-var user1 = Users(id: 1, username: "xxxxx",password: "1234")
-var user2 = Users(id: 2, username: "yyyyy",password: "124")
-var user3 = Users(id: 3, username: "zzzzz",password: "123")
-
-let users = [user1,user2,user3]

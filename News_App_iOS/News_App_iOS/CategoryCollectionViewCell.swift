@@ -8,12 +8,10 @@
 import UIKit
 
 class CategoryCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var categoryNameOutlet: UILabel!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    @IBOutlet weak var categoryView: UIView!
     
+
+    @IBOutlet weak var categoryName: UITextView!
     
+   
+
 }
