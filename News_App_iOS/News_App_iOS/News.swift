@@ -22,7 +22,8 @@ struct News {
 
 var news1 = News(Headline: "Forever Green | Northwest President John Jasinski's journey",
                  image:UIImage(named: "news1")!,
-                 Description: "The man at the helm of Northwest for the last 13 years — and until the conclusion of June — sat in a black leather chair on the first floor of the campus’s Administration Building. He was wearing denim blue jeans, a multi-colored button-up, navy blazer and, most importantly, socks with his dog’s face on them — a mournful tribute to his longtime companion, Ruby, who passed away less than 24 hours prior.", Date: "04/26/2022",
+                 Description: "The man at the helm of Northwest for the last 13 years — and until the conclusion of June — sat in a black leather chair on the first floor of the campus’s Administration Building. He was wearing denim blue jeans, a multi-colored button-up, navy blazer and, most importantly, socks with his dog’s face on them — a mournful tribute to his longtime companion, Ruby, who passed away less than 24 hours prior.",
+                 Date: "04/26/2022",
                  isSaved: true,
                  category:"Trending")
 
@@ -103,4 +104,18 @@ var news12 = News(Headline: "Northwest track changes schedule due to weather, co
                   isSaved: false,
                   category: "Sports")
 
-let news = [news1,news2,news3,news4,news5,news6,news7,news8,news9,news10,news11,news12]
+var news13 = News(Headline: "Congratulations to Lunduk Sherpa and Sai Manideep Allu for publishing the book chapter in Springer. (Lunduk Sherpa graduated last December).",
+                  image: UIImage(named: "news13")!,
+                  Description: "Bandi, A., Sherpa, L., Allu, S.M. (2022). Machine Learning Algorithms for DDoS Attack Detection in Cybersecurity. In: Gunjan, V.K., Zurada, J.M. (eds) Modern Approaches in Machine Learning & Cognitive Science: A Walkthrough. Studies in Computational Intelligence, vol 1027. Springer, Cham.",
+                  Date: "04/29/2022",
+                  isSaved: true,
+                  category: "Technology")
+
+var news14 = News(Headline: "Congratulations to Dr.Ajay Bandi & Sowmya Yalamarthi for publishing the paper in IEEE.",
+                  image: UIImage(named: "news14")!,
+                  Description: "A. Bandi and S. Yalamarthi, Towards Artificial Intelligence Empowered Security and Privacy Issues in 6G Communications, 2022 International Conference on Sustainable Computing and Data Communication Systems (ICSCDS), 2022, pp. 372-378, doi: 10.1109/ICSCDS53736.2022.9760857.",
+                  Date: "04/9/2022",
+                  isSaved: false,
+                  category: "Technology")
+
+let news = [news1,news2,news3,news4,news5,news6,news7,news8,news9,news10,news11,news12,news13,news14]
